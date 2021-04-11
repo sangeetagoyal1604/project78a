@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>family portfolio</title>
+
+    </head>
+<body>
+<h1>family portfolio</h1>
+<img id="photo"
+src="20150903_111556.jpg">
+<div>
+    <button id="next" type="button" onclick="family()">
+        Next
+    </button>
+</div>
+<div>
+ <p1 id="firstmember"> father   </p1>
+ <img id="flipimage"  
+ src="C:\visual stuidio\project78\20121231_112941.jpg">
+ </div>
+<div>
+<p2 id="secondmember">mother</p2>
+ <img id="flipimage"
+ src="C:\visual stuidio\project78\20140102_172709.jpg">
+ </div>
+
+ <div>
+    <p3 id="thirddmember">brother</p3>
+     <img id="flipimage"
+     src="">
+     </div>
+
+     <div>
+        <p4 id="fourthmember">sister</p4>
+         <img id="flipimage"
+         src="">
+         </div>
+ <script>
+var store= ["family portfolio","father","mother","brother","sister"];
+var imgstore=["20150903_111556.jpg","C:\visual stuidio\project78\20121231_112941.jpg","C:\visual stuidio\project78\20140102_172709.jpg"];
+var i=0
+function family(){
+    document.getElementById("family").innerHTML=store[i];
+    document.getElementById("flipimage").src=imgstore[i];
+    i++; 
+}
+</script>
+</body>
+</html>
